@@ -1,6 +1,6 @@
 ---
 title: Retail Solutions
-layout: retail-solutions
+layout: retail_solutions
 ---
 
 <h1>Retail </h1>
