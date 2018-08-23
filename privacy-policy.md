@@ -1,4 +1,4 @@
 ---
 title: Privacy Policy
-layout: privacy_policy
+layout: privacy-policy
 ---
