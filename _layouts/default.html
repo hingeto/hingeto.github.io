@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/hingeto.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/mod.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/ihavecookies.css' | relative_url }}">
 </head>
 
 <body class="{{ page.body_class | default: 'page-home' }}">
@@ -52,8 +53,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/jquery.ihavecookies.min.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/global.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/slider.js' | relative_url }}"></script>
+   <script type="text/javascript">
+$(function() {
+    var options = {
+        message: "This website makes use of cookies to enhance browsing experience and provide additional functionality. \nBy clicking Allow cookies you give permission for this website to store small bits of data on your computer. None of this data can or will be used to identify or contact you. You will only have to enable cookies once per domain."
+    };
+
+    $('body').ihavecookies(options);
+})
+</script>
 </body>
 
 </html>
